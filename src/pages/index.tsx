@@ -35,7 +35,7 @@ export default function Home() {
           justify="center"
           h="100%"
           spacing="16"
-          maxW="8xl"
+          maxW="7xl"
           margin="0 auto"
         >
           <Text color="white" fontSize="6xl" fontWeight="extrabold">
@@ -66,7 +66,7 @@ export default function Home() {
               <NextButton />
             </VStack>
             <ScaleFade initialScale={0.3} in>
-              <Box display={{ base: "none", xl: "block" }}>
+              <Box display={{ base: "none", xl: "block" }} mr="-28">
                 <Lottie animationData={Globe} loop={true} />;
               </Box>
             </ScaleFade>
