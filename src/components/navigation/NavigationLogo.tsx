@@ -1,6 +1,5 @@
 import { Text, Box } from "@chakra-ui/react";
 import React from "react";
-import { NavVariant } from "./NavigationBar";
 
 const NavigationLogo: React.FC = () => {
   return (

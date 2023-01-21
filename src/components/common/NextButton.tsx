@@ -1,16 +1,22 @@
 import { Center, Button, HStack, Text } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import Link from "next/link";
-import React from "react";
-import Underline from "./Underline";
+import React, { PropsWithChildren } from "react";
+import UnderlineEffect from "./UnderlineEffect";
+import { Variant } from "../../types/Variant";
 
-interface Props {}
+interface Props {
+  variant?: Variant;
+}
 
-const NextButton: React.FC<Props> = () => {
+const NextButton: React.FC<PropsWithChildren<Props>> = ({
+  variant = "black",
+  children,
+}) => {
   return (
     <Link href="/about">
       <HStack
-        color="white"
+        color={variant}
         spacing="4"
         _hover={{
           "> div > div": {
@@ -18,17 +24,17 @@ const NextButton: React.FC<Props> = () => {
           },
         }}
       >
-        <Underline noHover>
-          <Text fontSize="2xl">About me</Text>
-        </Underline>
+        <UnderlineEffect noHover>
+          <Text fontSize="2xl">{children}</Text>
+        </UnderlineEffect>
         <Center
           borderRadius="full"
           border="2px"
-          borderColor="white"
+          borderColor={variant}
           w="44px"
           h="44px"
         >
-          <ArrowForwardIcon color="white" boxSize={8} />
+          <ArrowForwardIcon boxSize={8} />
         </Center>
       </HStack>
     </Link>

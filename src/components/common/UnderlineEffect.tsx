@@ -5,7 +5,7 @@ interface Props {
   noHover?: boolean;
 }
 
-const Underline: React.FC<PropsWithChildren<Props>> = ({
+const UnderlineEffect: React.FC<PropsWithChildren<Props>> = ({
   noHover = false,
   children,
 }) => {
@@ -28,4 +28,4 @@ const Underline: React.FC<PropsWithChildren<Props>> = ({
   );
 };
 
-export default Underline;
+export default UnderlineEffect;

@@ -1,19 +1,18 @@
 import { HStack } from "@chakra-ui/react";
 import React from "react";
+import { Variant } from "../../../types/Variant";
 import NavigationItems from "./NavigationItems";
 import NavigationLogo from "./NavigationLogo";
 
-export type NavVariant = "black" | "white";
-
 interface Props {
-  variant?: NavVariant;
+  variant?: Variant;
 }
 
-const NavigationBar: React.FC<Props> = ({ variant = "white" }) => {
+const NavigationBar: React.FC<Props> = ({ variant = "black" }) => {
   return (
     <HStack justify="space-between" spacing="8" color={variant}>
       <NavigationLogo />
-      <NavigationItems />
+      <NavigationItems variant={variant} />
     </HStack>
   );
 };

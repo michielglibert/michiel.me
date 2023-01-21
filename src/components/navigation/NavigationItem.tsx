@@ -1,7 +1,7 @@
 import { Link, LinkProps } from "@chakra-ui/react";
 import NextLink from "next/link";
 import React from "react";
-import Underline from "../../../components/Underline";
+import UnderlineEffect from "../common/UnderlineEffect";
 
 interface Props {
   title: string;
@@ -14,7 +14,7 @@ const NavigationItem: React.FC<LinkProps & Props> = ({
   ...props
 }) => {
   return (
-    <Underline>
+    <UnderlineEffect>
       <Link
         href={to}
         as={NextLink}
@@ -27,7 +27,7 @@ const NavigationItem: React.FC<LinkProps & Props> = ({
       >
         {title}
       </Link>
-    </Underline>
+    </UnderlineEffect>
   );
 };
 

@@ -9,10 +9,9 @@ import {
 } from "@chakra-ui/react";
 import { Typewriter } from "react-simple-typewriter";
 import Globe from "../../public/lottie/globe.json";
-import AppShell from "../components/AppShell";
-import NextButton from "../components/NextButton";
+import AppShell from "../components/common/AppShell";
 import Lottie from "lottie-react";
-import Belgium from "../theme/icons/Belgium";
+import NextButton from "../components/common/NextButton";
 
 export default function Home() {
   const shouldRenderBreak = useBreakpointValue({
@@ -28,7 +27,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <AppShell bg="#000020">
+      <AppShell bg="#000020" navVariant="white">
         <VStack
           pos="relative"
           align="flex-start"
@@ -59,15 +58,15 @@ export default function Home() {
           </Text>
           <HStack spacing="12" align="flex-start">
             <VStack spacing="16" align="stretch">
-              <Text color="white" maxW="2xl" fontSize="4xl">
+              <Text color={"white"} maxW="2xl" fontSize="4xl">
                 Pixel perfect, code clean, User-first, always keen. Front-end
                 flows, design glows, Innovative solutions, always a pro.
               </Text>
-              <NextButton />
+              <NextButton variant="white">About me</NextButton>
             </VStack>
             <ScaleFade initialScale={0.3} in>
-              <Box display={{ base: "none", xl: "block" }} mr="-28">
-                <Lottie animationData={Globe} loop={true} />;
+              <Box display={{ base: "none", xl: "block" }} mr="-36">
+                <Lottie animationData={Globe} loop={true} />
               </Box>
             </ScaleFade>
           </HStack>

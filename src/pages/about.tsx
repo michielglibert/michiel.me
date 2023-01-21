@@ -1,7 +1,9 @@
-import { Box } from "@chakra-ui/react";
+import { VStack } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Head from "next/head";
-import AppShell from "../components/AppShell";
+import AboutMe from "../components/about/AboutMe";
+import AppShell from "../components/common/AppShell";
+import NextButton from "../components/common/NextButton";
 
 const About: NextPage = () => {
   return (
@@ -12,7 +14,13 @@ const About: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <AppShell navVariant="black"></AppShell>
+      <AppShell navVariant="black">
+        <VStack spacing="16">
+          <AboutMe>
+            <NextButton>Career</NextButton>
+          </AboutMe>
+        </VStack>
+      </AppShell>
     </>
   );
 };

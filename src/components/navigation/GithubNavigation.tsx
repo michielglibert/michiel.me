@@ -1,32 +1,35 @@
-import { Box, Center, Link } from "@chakra-ui/react";
+import { Link } from "@chakra-ui/react";
 import React from "react";
-import GithubIcon from "../../../theme/icons/GithubIcon";
+import GithubIcon from "../../theme/icons/GithubIcon";
+import { Variant } from "../../types/Variant";
 
-interface Props {}
+interface Props {
+  variant: Variant;
+}
 
-const GithubNavigation: React.FC<Props> = () => {
+const GithubNavigation: React.FC<Props> = ({ variant }) => {
   return (
     <Link
       href="https://github.com/michielglibert"
+      color={variant}
       isExternal
       display="flex"
       justifyContent="center"
       alignItems="center"
       pos="relative"
       as="a"
-      color="white"
       w="10"
       h="10"
       cursor="pointer"
       _hover={{
-        color: "black",
+        color: variant === "black" ? "white" : "black",
         _before: {
           transform: "scale(1)",
         },
       }}
       transform="scale(1)"
       _before={{
-        backgroundColor: "white",
+        backgroundColor: variant,
         borderRadius: "full",
         content: '""',
         position: "absolute",
