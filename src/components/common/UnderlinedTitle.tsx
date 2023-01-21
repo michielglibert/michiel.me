@@ -4,6 +4,7 @@ import React, { PropsWithChildren } from "react";
 const UnderlinedTitle: React.FC<PropsWithChildren> = ({ children }) => {
   return (
     <Text
+      display="inline-block"
       pos="relative"
       fontSize="5xl"
       fontWeight="semibold"

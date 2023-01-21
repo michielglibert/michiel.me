@@ -3,7 +3,7 @@ import { Box, Text, VStack, Image } from "@chakra-ui/react";
 
 const Content: React.FC = () => {
   return (
-    <VStack align="stretch" spacing="6" w="3xl" fontSize="lg">
+    <VStack spacing="6" fontSize="lg">
       <Text align="left">
         I am Michiel Glibert, a software engineer with a strong focus on React.
         I have a passion for technology and constantly strive to expand my

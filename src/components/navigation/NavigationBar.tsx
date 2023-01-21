@@ -1,6 +1,6 @@
 import { HStack } from "@chakra-ui/react";
 import React from "react";
-import { Variant } from "../../../types/Variant";
+import { Variant } from "../../types/Variant";
 import NavigationItems from "./NavigationItems";
 import NavigationLogo from "./NavigationLogo";
 

@@ -7,14 +7,16 @@ import { Variant } from "../../types/Variant";
 
 interface Props {
   variant?: Variant;
+  to: string;
 }
 
 const NextButton: React.FC<PropsWithChildren<Props>> = ({
+  to,
   variant = "black",
   children,
 }) => {
   return (
-    <Link href="/about">
+    <Link href={to}>
       <HStack
         color={variant}
         spacing="4"

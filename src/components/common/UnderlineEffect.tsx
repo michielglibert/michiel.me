@@ -1,11 +1,13 @@
-import { VStack, Box } from "@chakra-ui/react";
+import { VStack, Box, ColorProps } from "@chakra-ui/react";
 import React, { PropsWithChildren } from "react";
 
 interface Props {
+  color?: ColorProps["color"];
   noHover?: boolean;
 }
 
 const UnderlineEffect: React.FC<PropsWithChildren<Props>> = ({
+  color = "currentcolor",
   noHover = false,
   children,
 }) => {
@@ -23,7 +25,7 @@ const UnderlineEffect: React.FC<PropsWithChildren<Props>> = ({
       })}
     >
       {children}
-      <Box h="2px" bg="currentcolor" w="0" transition="width 300ms" />
+      <Box h="2px" bg={color} w="0" transition="width 300ms" />
     </VStack>
   );
 };

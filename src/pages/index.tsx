@@ -62,7 +62,9 @@ export default function Home() {
                 Pixel perfect, code clean, User-first, always keen. Front-end
                 flows, design glows, Innovative solutions, always a pro.
               </Text>
-              <NextButton variant="white">About me</NextButton>
+              <NextButton to="/about" variant="white">
+                About me
+              </NextButton>
             </VStack>
             <ScaleFade initialScale={0.3} in>
               <Box display={{ base: "none", xl: "block" }} mr="-36">

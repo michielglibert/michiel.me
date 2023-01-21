@@ -1,4 +1,4 @@
-import { VStack, Box } from "@chakra-ui/react";
+import { VStack, Box, Flex } from "@chakra-ui/react";
 import React, { PropsWithChildren } from "react";
 import UnderlinedTitle from "../common/UnderlinedTitle";
 
@@ -8,12 +8,12 @@ interface Props {
 
 const Section: React.FC<PropsWithChildren<Props>> = ({ title, children }) => {
   return (
-    <VStack align="flex-start" spacing="16">
+    <Box display="inline-block" w="100%" maxW="840px">
       <UnderlinedTitle>{title}</UnderlinedTitle>
-      <VStack spacing="8" align="flex-start" pl="16">
+      <VStack align="flex-start" pt="8" spacing="8" maxW="3xl" ml="auto">
         {children}
       </VStack>
-    </VStack>
+    </Box>
   );
 };
 
