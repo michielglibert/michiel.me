@@ -14,7 +14,12 @@ const About: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <AppShell navVariant="black">
+      <AppShell
+        variant="black"
+        backgroundImage="url(/images/background-triangles.svg)"
+        backgroundRepeat="no-repeat"
+        backgroundPosition="bottom center"
+      >
         <VStack>
           <AboutMe>
             <NextButton to="/career">Career</NextButton>

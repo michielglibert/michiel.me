@@ -1,14 +1,9 @@
-import { Box, HStack } from "@chakra-ui/react";
+import { HStack } from "@chakra-ui/react";
 import React from "react";
-import { Variant } from "../../types/Variant";
 import GithubNavigation from "./GithubNavigation";
 import NavigationItem from "./NavigationItem";
 
-interface Props {
-  variant: Variant;
-}
-
-const NavigationItems: React.FC<Props> = ({ variant }) => {
+const NavigationItems: React.FC = () => {
   return (
     <HStack spacing="20">
       <NavigationItem title="HOME" to="/" />
@@ -16,7 +11,7 @@ const NavigationItems: React.FC<Props> = ({ variant }) => {
       <NavigationItem title="CAREER" to="/career" />
       <NavigationItem title="CONTACT" to="/contact" />
       <NavigationItem title="BLOG" color="#4DA1A9" to="/blog" />
-      <GithubNavigation variant={variant} />
+      <GithubNavigation />
     </HStack>
   );
 };

@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import AppShell from "../components/common/AppShell";
+import NextButton from "../components/common/NextButton";
 
 const Career: NextPage = () => {
   return (
@@ -11,7 +12,9 @@ const Career: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <AppShell navVariant="black">Career</AppShell>
+      <AppShell variant="black">
+        <NextButton to="/contact">Contact</NextButton>
+      </AppShell>
     </>
   );
 };

@@ -1,13 +1,12 @@
 import { Link } from "@chakra-ui/react";
 import React from "react";
+import { useVariant } from "../../store/VariantContext";
 import GithubIcon from "../../theme/icons/GithubIcon";
 import { Variant } from "../../types/Variant";
 
-interface Props {
-  variant: Variant;
-}
+const GithubNavigation: React.FC = () => {
+  const variant = useVariant();
 
-const GithubNavigation: React.FC<Props> = ({ variant }) => {
   return (
     <Link
       href="https://github.com/michielglibert"

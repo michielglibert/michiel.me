@@ -1,15 +1,16 @@
-import { Center, Text } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 import React from "react";
+import { useVariant } from "../../store/VariantContext";
 
-interface Props {}
+const Footer: React.FC = () => {
+  const variant = useVariant();
 
-const Footer: React.FC<Props> = () => {
   return (
-    <Center bg="#000020" px="12" py="6">
-      <Text align="center" color="white">
+    <Flex align="flex-end" as="footer" px="12" py="6" w="100%">
+      <Text align="right" color={variant} flexGrow={1}>
         Made with ♥ by Michiel{" "}
       </Text>
-    </Center>
+    </Flex>
   );
 };
 

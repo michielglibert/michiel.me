@@ -3,18 +3,15 @@ import { ArrowForwardIcon } from "@chakra-ui/icons";
 import Link from "next/link";
 import React, { PropsWithChildren } from "react";
 import UnderlineEffect from "./UnderlineEffect";
-import { Variant } from "../../types/Variant";
+import { useVariant } from "../../store/VariantContext";
 
 interface Props {
-  variant?: Variant;
   to: string;
 }
 
-const NextButton: React.FC<PropsWithChildren<Props>> = ({
-  to,
-  variant = "black",
-  children,
-}) => {
+const NextButton: React.FC<PropsWithChildren<Props>> = ({ to, children }) => {
+  const variant = useVariant();
+
   return (
     <Link href={to}>
       <HStack

@@ -1,6 +1,9 @@
+import { GridItem, HStack, SimpleGrid } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import AppShell from "../components/common/AppShell";
+import LeftSection from "../components/contact/LeftSection";
+import RightSection from "../components/contact/RightSection";
 
 const Contact: NextPage = () => {
   return (
@@ -11,7 +14,28 @@ const Contact: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <AppShell navVariant="black"></AppShell>
+      <AppShell
+        variant="black"
+        backgroundImage="url(/images/background-curved-lines.svg)"
+        backgroundRepeat="no-repeat"
+        backgroundPosition="bottom right"
+      >
+        <SimpleGrid
+          pt="8"
+          columns={2}
+          h="100%"
+          maxW="1300px"
+          margin="0 auto"
+          columnGap="20"
+        >
+          <GridItem>
+            <LeftSection />
+          </GridItem>
+          <GridItem>
+            <RightSection />
+          </GridItem>
+        </SimpleGrid>
+      </AppShell>
     </>
   );
 };

@@ -1,17 +1,7 @@
 import Head from "next/head";
-import {
-  Box,
-  HStack,
-  ScaleFade,
-  Text,
-  useBreakpointValue,
-  VStack,
-} from "@chakra-ui/react";
-import { Typewriter } from "react-simple-typewriter";
-import Globe from "../../public/lottie/globe.json";
+import { useBreakpointValue, VStack } from "@chakra-ui/react";
 import AppShell from "../components/common/AppShell";
-import Lottie from "lottie-react";
-import NextButton from "../components/common/NextButton";
+import GreetingDescription from "../components/home/GreetingDescription";
 import Greeting from "../components/home/Greeting";
 
 export default function Home() {
@@ -28,7 +18,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <AppShell bg="#000020" navVariant="white">
+      <AppShell bg="#000020" variant="white">
         <VStack
           pos="relative"
           align="flex-start"
@@ -39,22 +29,7 @@ export default function Home() {
           margin="0 auto"
         >
           <Greeting />
-          <HStack spacing="12" align="flex-start">
-            <VStack spacing="16" align="stretch">
-              <Text color={"white"} maxW="2xl" fontSize="4xl">
-                Pixel perfect, code clean, User-first, always keen. Front-end
-                flows, design glows, Innovative solutions, always a pro.
-              </Text>
-              <NextButton to="/about" variant="white">
-                About me
-              </NextButton>
-            </VStack>
-            <ScaleFade initialScale={0.3} in>
-              <Box display={{ base: "none", lg: "block" }} mr="-36">
-                <Lottie animationData={Globe} loop={true} />
-              </Box>
-            </ScaleFade>
-          </HStack>
+          <GreetingDescription />
         </VStack>
       </AppShell>
     </>
