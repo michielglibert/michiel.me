@@ -1,5 +1,6 @@
 import { BoxProps, ColorProps, Link, LinkProps } from "@chakra-ui/react";
 import NextLink from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 import UnderlineEffect from "../common/UnderlineEffect";
 
@@ -15,8 +16,10 @@ const NavigationItem: React.FC<LinkProps & Props> = ({
   title,
   ...props
 }) => {
+  const { pathname } = useRouter();
+
   return (
-    <UnderlineEffect color={color}>
+    <UnderlineEffect isActive={pathname === to} color={color}>
       <Link
         href={to}
         as={NextLink}

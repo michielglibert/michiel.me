@@ -2,27 +2,28 @@ import { VStack, Box, ColorProps } from "@chakra-ui/react";
 import React, { PropsWithChildren } from "react";
 
 interface Props {
+  isActive?: boolean;
   color?: ColorProps["color"];
-  noHover?: boolean;
 }
 
 const UnderlineEffect: React.FC<PropsWithChildren<Props>> = ({
+  isActive,
   color = "currentcolor",
-  noHover = false,
   children,
 }) => {
+  const activeStyling = {
+    "> div": {
+      width: "100%",
+    },
+  };
+
   return (
     <VStack
       align="flex-start"
       spacing="1px"
       cursor="pointer"
-      {...(!noHover && {
-        _hover: {
-          "> div": {
-            width: "100%",
-          },
-        },
-      })}
+      _hover={activeStyling}
+      {...(isActive && { sx: activeStyling })}
     >
       {children}
       <Box h="2px" bg={color} w="0" transition="width 300ms" />

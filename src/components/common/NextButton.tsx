@@ -26,7 +26,7 @@ const NextButton: React.FC<PropsWithChildren<Props>> = ({
           },
         }}
       >
-        <UnderlineEffect noHover>
+        <UnderlineEffect>
           <Text fontSize="2xl">{children}</Text>
         </UnderlineEffect>
         <Center
