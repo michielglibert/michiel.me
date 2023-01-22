@@ -10,7 +10,7 @@ const Greeting: React.FC<Props> = () => {
     <Text color="white" fontSize="6xl" fontWeight="extrabold">
       Hi, I&apos;m Michiel,{" "}
       <Box as="br" display={{ base: "block", xl: "none" }} /> a{" "}
-      <Box as="span" color="#348AA7">
+      <Box as="span" color="#2292A4">
         <Typewriter
           words={[
             "Software Engineer",
@@ -19,7 +19,7 @@ const Greeting: React.FC<Props> = () => {
             "Team player",
           ]}
           cursor
-          cursorColor="#348AA7"
+          cursorColor="#2292A4"
           delaySpeed={2500}
           typeSpeed={45}
           deleteSpeed={45}
