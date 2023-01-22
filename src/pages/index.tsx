@@ -12,6 +12,7 @@ import Globe from "../../public/lottie/globe.json";
 import AppShell from "../components/common/AppShell";
 import Lottie from "lottie-react";
 import NextButton from "../components/common/NextButton";
+import Greeting from "../components/home/Greeting";
 
 export default function Home() {
   const shouldRenderBreak = useBreakpointValue({
@@ -37,25 +38,7 @@ export default function Home() {
           maxW="7xl"
           margin="0 auto"
         >
-          <Text color="white" fontSize="6xl" fontWeight="extrabold">
-            Hi, I&apos;m Michiel,{shouldRenderBreak && <br />} a{" "}
-            <Box as="span" color="#348AA7">
-              <Typewriter
-                words={[
-                  "Software Engineer",
-                  "Problem Solver",
-                  "Tech Enthousiast",
-                  "Team player",
-                ]}
-                cursor
-                cursorColor="#348AA7"
-                delaySpeed={2500}
-                typeSpeed={45}
-                deleteSpeed={45}
-                loop={0}
-              />
-            </Box>
-          </Text>
+          <Greeting />
           <HStack spacing="12" align="flex-start">
             <VStack spacing="16" align="stretch">
               <Text color={"white"} maxW="2xl" fontSize="4xl">
@@ -67,7 +50,7 @@ export default function Home() {
               </NextButton>
             </VStack>
             <ScaleFade initialScale={0.3} in>
-              <Box display={{ base: "none", xl: "block" }} mr="-36">
+              <Box display={{ base: "none", lg: "block" }} mr="-36">
                 <Lottie animationData={Globe} loop={true} />
               </Box>
             </ScaleFade>
