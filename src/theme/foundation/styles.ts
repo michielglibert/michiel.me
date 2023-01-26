@@ -3,9 +3,6 @@ const styles = {
     input: {
       color: "black",
     },
-    a: {
-      color: "primary.main",
-    },
   },
 };
 

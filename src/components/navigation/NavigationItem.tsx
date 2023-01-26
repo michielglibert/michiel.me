@@ -23,10 +23,10 @@ const NavigationItem: React.FC<LinkProps & Props> = ({
       <Link
         href={to}
         as={NextLink}
-        fontSize="xl"
+        textStyle="large"
         fontWeight="semibold"
-        letterSpacing="3px"
-        // Seems like the NextLink component adds underline
+        letterSpacing="0.2rem"
+        // Important to override the default styles
         textDecoration="none !important"
         color={color}
         {...props}

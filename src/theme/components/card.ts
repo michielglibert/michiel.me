@@ -1,7 +1,15 @@
-const Card = {
-  baseStyle: {
-    container: "gray.background",
-  },
-};
+import { cardAnatomy } from "@chakra-ui/anatomy";
+import { createMultiStyleConfigHelpers } from "@chakra-ui/react";
 
-export default Card;
+const { definePartsStyle, defineMultiStyleConfig } =
+  createMultiStyleConfigHelpers(cardAnatomy.keys);
+
+const baseStyle = definePartsStyle({
+  container: {
+    backgroundColor: "gray.background",
+  },
+});
+
+const cardTheme = defineMultiStyleConfig({ baseStyle });
+
+export default cardTheme;

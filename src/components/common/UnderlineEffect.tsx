@@ -20,13 +20,13 @@ const UnderlineEffect: React.FC<PropsWithChildren<Props>> = ({
   return (
     <VStack
       align="flex-start"
-      spacing="1px"
+      spacing="0.25"
       cursor="pointer"
       _hover={activeStyling}
       {...(isActive && { sx: activeStyling })}
     >
       {children}
-      <Box h="2px" bg={color} w="0" transition="width 300ms" />
+      <Box h="0.5" bg={color} w="0" transition="width 300ms" />
     </VStack>
   );
 };

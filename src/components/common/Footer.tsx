@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
   return (
     <Flex align="flex-end" as="footer" px="12" py="6" w="100%">
       <Text align="right" color={variant} flexGrow={1}>
-        Made with ♥ by Michiel{" "}
+        Made with ♥ by Michiel
       </Text>
     </Flex>
   );

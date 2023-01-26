@@ -24,14 +24,14 @@ const NextButton: React.FC<PropsWithChildren<Props>> = ({ to, children }) => {
         }}
       >
         <UnderlineEffect>
-          <Text fontSize="2xl">{children}</Text>
+          <Text textStyle="h5">{children}</Text>
         </UnderlineEffect>
         <Center
           borderRadius="full"
           border="2px"
           borderColor={variant}
-          w="44px"
-          h="44px"
+          w="11"
+          h="11"
         >
           <ArrowForwardIcon boxSize={8} />
         </Center>

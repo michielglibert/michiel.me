@@ -1,29 +1,9 @@
 const headingsBase = {
-  fontWeight: "bold",
   lineHeight: "120%",
 };
 
 const bodyBase = {
   lineHeight: "150%",
-};
-
-const largeBase = {
-  ...bodyBase,
-  fontSize: "1.25rem",
-};
-
-const regularBase = {
-  ...bodyBase,
-  fontSize: "1rem",
-};
-
-const smallBodyBase = {
-  ...bodyBase,
-  fontSize: "0.8rem",
-};
-const extraSmallBodyBase = {
-  ...bodyBase,
-  fontSize: "0.64rem",
 };
 
 const textStyles = {
@@ -33,14 +13,17 @@ const textStyles = {
   h1: {
     ...headingsBase,
     fontSize: "3.815rem",
+    fontWeight: "bold",
   },
   h2: {
     ...headingsBase,
     fontSize: "3.052rem",
+    fontWeight: "semibold",
   },
   h3: {
     ...headingsBase,
     fontSize: "2.441rem",
+    fontWeight: "medium",
   },
   h4: {
     ...headingsBase,
@@ -54,19 +37,19 @@ const textStyles = {
   // ****************************
   // * Normal text
   // ****************************
-  largeBase: {
+  large: {
     ...bodyBase,
     fontSize: "1.25rem",
   },
-  regularBase: {
+  regular: {
     ...bodyBase,
     fontSize: "1rem",
   },
-  smallBodyBase: {
+  small: {
     ...bodyBase,
     fontSize: "0.8rem",
   },
-  extraSmallBodyBase: {
+  extraSmall: {
     ...bodyBase,
     fontSize: "0.64rem",
   },

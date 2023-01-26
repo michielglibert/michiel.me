@@ -13,12 +13,10 @@ const LeftSection: React.FC = () => {
       w="100%"
       pt="20"
     >
-      <Text align="left" fontSize="5xl" fontWeight="bold">
+      <Text textStyle="h1">
         Let&apos;s chat. <br /> Tell me about your interest in me.
       </Text>
-      <Text align="left" fontSize="2xl" fontWeight="medium">
-        Let’s create something together 🤘
-      </Text>
+      <Text textStyle="h4">Let&apos;s create something together 🤘</Text>
 
       <Center w="100%">
         <Box w="md">

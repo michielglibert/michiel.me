@@ -31,9 +31,7 @@ const ContactForm: React.FC<Props> = () => {
         <FormLabel>Message</FormLabel>
         <Textarea rows={5} />
       </FormControl>
-      <Button size="lg" borderRadius="full" px="12">
-        Send
-      </Button>
+      <Button size="lg">Send</Button>
     </Card>
   );
 };

@@ -6,8 +6,8 @@ const UnderlinedTitle: React.FC<PropsWithChildren> = ({ children }) => {
     <Text
       display="inline-block"
       pos="relative"
-      fontSize="5xl"
-      fontWeight="semibold"
+      textStyle="h2"
+      lineHeight="150%"
       _after={{
         pos: "absolute",
         width: "100%",

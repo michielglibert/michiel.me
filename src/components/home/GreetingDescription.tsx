@@ -9,7 +9,7 @@ const GreetingDescription: React.FC = () => {
   return (
     <HStack spacing="12" align="flex-start">
       <VStack spacing="16" align="stretch">
-        <Text color={"white"} maxW="2xl" fontSize="4xl">
+        <Text color={"white"} maxW="3xl" textStyle="h3" lineHeight="150%">
           Pixel perfect, code clean, User-first, always keen. Front-end flows,
           design glows, Innovative solutions, always a pro.
         </Text>
