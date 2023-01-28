@@ -3,6 +3,12 @@ const styles = {
     input: {
       color: "black",
     },
+    a: {
+      textDecoration: "none",
+      _hover: {
+        textDecoration: "none !important",
+      },
+    },
   },
 };
 

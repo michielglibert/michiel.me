@@ -9,6 +9,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import React from "react";
+import SendIcon from "../../theme/icons/Send";
 
 interface Props {}
 
@@ -31,7 +32,9 @@ const ContactForm: React.FC<Props> = () => {
         <FormLabel>Message</FormLabel>
         <Textarea rows={5} />
       </FormControl>
-      <Button size="lg">Send</Button>
+      <Button size="lg" rightIcon={<SendIcon />}>
+        Send
+      </Button>
     </Card>
   );
 };

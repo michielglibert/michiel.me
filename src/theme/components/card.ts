@@ -7,6 +7,8 @@ const { definePartsStyle, defineMultiStyleConfig } =
 const baseStyle = definePartsStyle({
   container: {
     backgroundColor: "gray.background",
+    boxShadow: "none",
+    borderRadius: "lg",
   },
 });
 

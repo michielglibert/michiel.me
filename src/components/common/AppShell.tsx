@@ -9,6 +9,8 @@ interface Props {
   variant?: Variant;
 }
 
+export const DEFAULT_PADDING = "12";
+
 const AppShell: React.FC<PropsWithChildren<FlexProps & Props>> = ({
   variant = "black",
   children,
@@ -17,10 +19,10 @@ const AppShell: React.FC<PropsWithChildren<FlexProps & Props>> = ({
   return (
     <VariantContextProvider variant={variant}>
       <Flex flexDirection="column" h="100%" pos="relative" {...props}>
-        <VStack flexGrow={1} spacing="8" p="12" align="stretch">
-          <NavigationBar />
-          <Box flexGrow={1}>{children}</Box>
-        </VStack>
+        <NavigationBar />
+        <Box flexGrow={1} p={props.p != null ? props.p : DEFAULT_PADDING}>
+          {children}
+        </Box>
         <Footer />
       </Flex>
     </VariantContextProvider>
