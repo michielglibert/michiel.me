@@ -12,7 +12,8 @@ const Content: React.FC = () => {
         people I help.
       </Text>
 
-      <Image src="/images/pcdude.png" alt="Pc guy" borderRadius="lg" />
+      {/* Commented till replace by image of me */}
+      {/* <Image src="/images/pcdude.png" alt="Pc guy" borderRadius="lg" /> */}
 
       <Text>
         I have a natural inclination towards problem solving and enjoy tackling

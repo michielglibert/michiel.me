@@ -10,7 +10,8 @@ const NavigationItems: React.FC = () => {
       <NavigationItem title="ABOUT ME" to="/about" />
       <NavigationItem title="CAREER" to="/career" />
       <NavigationItem title="CONTACT" to="/contact" />
-      <NavigationItem title="BLOG" color="#4DA1A9" to="/blog" />
+      {/* Temporary commented while still WIP */}
+      {/* <NavigationItem title="BLOG" color="#4DA1A9" to="/blog" /> */}
       <GithubNavigation />
     </HStack>
   );
