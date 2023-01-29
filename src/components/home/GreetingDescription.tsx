@@ -31,7 +31,6 @@ const GreetingDescription: React.FC = () => {
         <ScaleFade initialScale={0.3} in>
           <Box
             maxW={{ base: "md", laptop: "unset" }}
-            // display={{ base: "none", laptop: "block" }}
             mr={{ base: "-12", laptop: "-28", laptopL: "-36" }}
           >
             <Lottie animationData={Laptop} loop={true} />

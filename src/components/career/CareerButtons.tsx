@@ -18,7 +18,7 @@ const CareerButtons: React.FC = () => {
         as={Link}
         size="lg"
         rightIcon={<DownloadIcon boxSize={5} />}
-        href="https://1drv.ms/b/s!Ar5N90m1WjHXj-BbPS8juwN1wXHhqg?e=I5hi6a"
+        href="https://storage.cloud.google.com/michiel-me/CV_MichielGlibert.pdf"
         isExternal
       >
         Download my CV
