@@ -8,7 +8,7 @@ const manrope = Manrope({ subsets: ["latin"] });
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
-      <main className={manrope.className} overflowX="auto">
+      <main className={manrope.className}>
         <Component {...pageProps} />
       </main>
     </ChakraProvider>
