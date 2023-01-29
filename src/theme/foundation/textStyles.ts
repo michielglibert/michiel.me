@@ -12,26 +12,26 @@ const textStyles = {
   // ****************************
   h1: {
     ...headingsBase,
-    fontSize: "3.815rem",
+    fontSize: { base: "2.441rem", laptop: "3.052rem", laptopL: "3.815rem" },
     fontWeight: "bold",
   },
   h2: {
     ...headingsBase,
-    fontSize: "3.052rem",
+    fontSize: { base: "1.953rem", laptop: "2.441rem", laptopL: "3.052rem" },
     fontWeight: "semibold",
   },
   h3: {
     ...headingsBase,
-    fontSize: "2.441rem",
+    fontSize: { base: "1.563rem", laptop: "1.953rem", laptopL: "2.441rem" },
     fontWeight: "medium",
   },
   h4: {
     ...headingsBase,
-    fontSize: "1.953rem",
+    fontSize: { base: "1.25rem", laptop: "1.563rem", laptopL: "1.953rem" },
   },
   h5: {
     ...headingsBase,
-    fontSize: "1.563rem",
+    fontSize: { base: "1.25rem", laptop: "1.563rem", laptopL: "1.563rem" },
   },
 
   // ****************************
@@ -39,7 +39,7 @@ const textStyles = {
   // ****************************
   large: {
     ...bodyBase,
-    fontSize: "1.25rem",
+    fontSize: { base: "1rem", laptop: "1.25rem", laptopL: "1.25rem" },
   },
   regular: {
     ...bodyBase,

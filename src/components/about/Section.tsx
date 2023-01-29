@@ -22,6 +22,7 @@ const Section: React.FC<PropsWithChildren<Props & BoxProps>> = ({
         spacing="8"
         maxW="3xl"
         ml="auto"
+        mr={{ base: "auto", laptop: "0" }}
         {...childProps}
       >
         {children}

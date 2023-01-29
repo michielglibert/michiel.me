@@ -55,7 +55,14 @@ const CareerItem: React.FC<Props> = ({
           </HStack>
           <Text textStyle="large">{jobDescription}</Text>
         </VStack>
-        <Center bg="white" p="12" maxW="sm" maxH="44" borderRadius="lg">
+        <Center
+          bg="white"
+          p="12"
+          maxW="sm"
+          maxH="44"
+          borderRadius="lg"
+          display={{ base: "none", tablet: "block" }}
+        >
           <Image src={imgSrc} alt="Wegroup" objectPosition="center" />
         </Center>
       </HStack>

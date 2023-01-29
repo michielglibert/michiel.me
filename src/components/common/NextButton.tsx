@@ -30,10 +30,10 @@ const NextButton: React.FC<PropsWithChildren<Props>> = ({ to, children }) => {
           borderRadius="full"
           border="2px"
           borderColor={variant}
-          w="11"
-          h="11"
+          w={{ base: "9", laptop: "11" }}
+          h={{ base: "9", laptop: "11" }}
         >
-          <ArrowForwardIcon boxSize={8} />
+          <ArrowForwardIcon boxSize={{ base: 6, laptop: 8 }} />
         </Center>
       </HStack>
     </Link>

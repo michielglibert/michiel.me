@@ -1,4 +1,4 @@
-import { BoxProps, ColorProps, Link, LinkProps } from "@chakra-ui/react";
+import { ColorProps, Link, LinkProps } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
@@ -23,7 +23,6 @@ const NavigationItem: React.FC<LinkProps & Props> = ({
       <Link
         href={to}
         as={NextLink}
-        textStyle="large"
         fontWeight="semibold"
         letterSpacing="0.2rem"
         // Important to override the default styles

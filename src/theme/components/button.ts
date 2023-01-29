@@ -13,8 +13,19 @@ const outline = defineStyle({
   },
 });
 
+const ghost = defineStyle({
+  borderRadius: "full",
+  _hover: {
+    opacity: "0.7",
+    bg: "transparent",
+  },
+  _active: {
+    bg: "transparent",
+  },
+});
+
 const buttonTheme = defineStyleConfig({
-  variants: { outline },
+  variants: { outline, ghost },
   defaultProps: { variant: "outline" },
 });
 

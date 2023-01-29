@@ -11,14 +11,14 @@ const LeftSection: React.FC = () => {
       align="flex-start"
       h="100%"
       w="100%"
-      pt="20"
+      pt={{ base: "0", laptop: "20" }}
     >
-      <Text textStyle="h1">
+      <Text textStyle={{ base: "h2", laptop: "h1" }}>
         Let&apos;s chat. <br /> Tell me about your interest in me.
       </Text>
       <Text textStyle="h4">Let&apos;s create something together 🤘</Text>
 
-      <Center w="100%">
+      <Center w="100%" display={{ base: "none", laptop: "block" }}>
         <Box w="md">
           <Lottie animationData={ReactLottie} loop={false} />
         </Box>

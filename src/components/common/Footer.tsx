@@ -7,7 +7,12 @@ const Footer: React.FC = () => {
   const variant = useVariant();
 
   return (
-    <Text align="right" color={variant} p={DEFAULT_PADDING}>
+    <Text
+      align="center"
+      color={variant}
+      p={DEFAULT_PADDING}
+      pt={{ base: "10", laptopL: "12" }}
+    >
       Made with ♥ by Michiel
     </Text>
   );

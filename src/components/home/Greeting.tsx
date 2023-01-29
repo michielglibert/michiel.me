@@ -7,7 +7,7 @@ interface Props {}
 
 const Greeting: React.FC<Props> = () => {
   return (
-    <Text color="white" textStyle="h1">
+    <Text color="white" textStyle={{ base: "h2", tablet: "h1" }}>
       Hi, I&apos;m Michiel,{" "}
       <Box as="br" display={{ base: "block", xl: "none" }} /> a{" "}
       <Box as="span" color="#2292A4">

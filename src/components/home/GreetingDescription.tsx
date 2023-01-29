@@ -1,5 +1,5 @@
-import { Box, ScaleFade } from "@chakra-ui/react";
-import { HStack, VStack, Text } from "@chakra-ui/react";
+import { Center, Box, ScaleFade, Flex } from "@chakra-ui/react";
+import { Stack, VStack, Text } from "@chakra-ui/react";
 import React from "react";
 import NextButton from "../common/NextButton";
 import Laptop from "../../../public/lottie/laptop.json";
@@ -7,20 +7,38 @@ import Lottie from "lottie-react";
 
 const GreetingDescription: React.FC = () => {
   return (
-    <HStack spacing="12" align="flex-start">
-      <VStack spacing="16" align="stretch">
-        <Text color={"white"} maxW="3xl" textStyle="h3" lineHeight="150%">
+    <Stack
+      flexDir={{ base: "column", laptop: "row" }}
+      spacing={{ base: "10", laptopL: "12" }}
+      align="flex-start"
+    >
+      <VStack
+        spacing={{ base: "8", laptop: "10", laptopL: "16" }}
+        align="stretch"
+      >
+        <Text
+          color={"white"}
+          maxW="3xl"
+          textStyle={{ base: "h4", tablet: "h3" }}
+          lineHeight="150%"
+        >
           Pixel perfect, code clean, User-first, always keen. Front-end flows,
           design glows, Innovative solutions, always a pro.
         </Text>
         <NextButton to="/about">About me</NextButton>
       </VStack>
-      <ScaleFade initialScale={0.3} in>
-        <Box display={{ base: "none", lg: "block" }} mr="-36">
-          <Lottie animationData={Laptop} loop={true} />
-        </Box>
-      </ScaleFade>
-    </HStack>
+      <Flex justify={{ base: "center", laptop: "flex-end" }} w="100%">
+        <ScaleFade initialScale={0.3} in>
+          <Box
+            maxW={{ base: "md", laptop: "unset" }}
+            // display={{ base: "none", laptop: "block" }}
+            mr={{ base: "-12", laptop: "-28", laptopL: "-36" }}
+          >
+            <Lottie animationData={Laptop} loop={true} />
+          </Box>
+        </ScaleFade>
+      </Flex>
+    </Stack>
   );
 };
 

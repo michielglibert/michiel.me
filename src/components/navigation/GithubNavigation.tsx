@@ -21,13 +21,16 @@ const GithubNavigation: React.FC = () => {
       h="10"
       cursor="pointer"
       _hover={{
-        color: variant === "black" ? "white" : "black",
-        _before: {
-          transform: "scale(1)",
+        tablet: {
+          color: variant === "black" ? "white" : "black",
+          _before: {
+            transform: "scale(1)",
+          },
         },
       }}
       transform="scale(1)"
       _before={{
+        display: { base: "none", tablet: "block" },
         backgroundColor: variant,
         borderRadius: "full",
         content: '""',
