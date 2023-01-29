@@ -20,7 +20,13 @@ const AppShell: React.FC<PropsWithChildren<FlexProps & Props>> = ({
 }) => {
   return (
     <VariantContextProvider variant={variant}>
-      <Flex flexDirection="column" minH="100%" pos="relative" {...props}>
+      <Flex
+        flexDirection="column"
+        minH="100%"
+        pos="relative"
+        overflowX="hidden"
+        {...props}
+      >
         <NavigationBar />
         <Box
           flexGrow={1}

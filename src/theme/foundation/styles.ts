@@ -1,13 +1,8 @@
-import { Manrope } from "@next/font/google";
-
-const manrope = Manrope({ subsets: ["latin"] });
-
 const styles = {
   global: {
-    "html,body,div#__next,div#__next > div": {
+    "html,body,div#__next,div#__next > main": {
       height: "100%",
-      overflowX: "hidden",
-      fontFamily: `${manrope.style.fontFamily}`,
+      // overflowX: "hidden",
     },
     input: {
       color: "black",
