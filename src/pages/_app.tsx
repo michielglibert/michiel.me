@@ -3,6 +3,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import theme from "../theme";
 import { useEffect } from "react";
 import emailjs from "@emailjs/browser";
+import "@fontsource/manrope";
 
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
