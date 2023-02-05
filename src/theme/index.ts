@@ -1,3 +1,5 @@
+import "@fontsource/manrope";
+
 import { extendTheme } from "@chakra-ui/react";
 import components from "./components";
 

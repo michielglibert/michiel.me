@@ -1,7 +1,6 @@
 import { Button, Stack, Link } from "@chakra-ui/react";
 import React from "react";
 import DownloadIcon from "../../theme/icons/Download";
-import { DEFAULT_PADDING } from "../common/AppShell";
 import NextButton from "../common/NextButton";
 
 const CareerButtons: React.FC = () => {
@@ -18,7 +17,7 @@ const CareerButtons: React.FC = () => {
         as={Link}
         size="lg"
         rightIcon={<DownloadIcon boxSize={5} />}
-        href="https://storage.cloud.google.com/michiel-me/CV_MichielGlibert.pdf"
+        href="https://storage.googleapis.com/michiel-me/CV_MichielGlibert.pdf"
         isExternal
       >
         Download my CV

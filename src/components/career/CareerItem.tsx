@@ -4,7 +4,6 @@ import {
   Image,
   Link,
   Tag,
-  TagProps,
   Text,
   VStack,
 } from "@chakra-ui/react";
