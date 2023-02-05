@@ -12,13 +12,14 @@ import {
 import React from "react";
 import { useForm } from "react-hook-form";
 import SendIcon from "../../theme/icons/Send";
+import emailjs from "@emailjs/browser";
 
-interface FormValues {
+type FormValues = {
   name: string;
   email: string;
   subject: string;
   message: string;
-}
+};
 
 const ContactForm: React.FC = () => {
   const {
@@ -31,11 +32,7 @@ const ContactForm: React.FC = () => {
 
   const onSubmit = handleSubmit(async (values) => {
     try {
-      const response = await fetch("https://formspree.io/f/xvonzape", {
-        method: "POST",
-        body: JSON.stringify(values),
-      });
-      const data = await response.json();
+      await emailjs.send("service_enkjvsf", "template_p0yl73c", values);
       toast({
         title: "Message sent!",
         description:
@@ -44,6 +41,7 @@ const ContactForm: React.FC = () => {
         duration: 9000,
         isClosable: true,
       });
+      reset({});
     } catch (e) {
       toast({
         title: "Oops, something went wrong!",
