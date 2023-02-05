@@ -20,9 +20,8 @@ const Contact: NextPage = () => {
         backgroundPosition="bottom right"
         containerProps={{
           display: "flex",
-          alignItems: "center",
+          alignItems: "stretch",
           justifyContent: "center",
-          pt: "0 !important",
         }}
       >
         <SimpleGrid

@@ -8,10 +8,11 @@ const Footer: React.FC = () => {
 
   return (
     <Text
-      align="center"
+      align="right"
       color={variant}
       p={DEFAULT_PADDING}
       pt={{ base: "10", laptopL: "12" }}
+      textStyle="small"
     >
       Made with ♥ by Michiel
     </Text>

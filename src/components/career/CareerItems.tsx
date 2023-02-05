@@ -11,6 +11,7 @@ const CareerItems: React.FC = ({}) => {
         jobTags={["WeGroup", "Current"]}
         imgSrc="/images/wegroup.png"
         href="https://www.wegroup.be/"
+        isFirst
       />
       <CareerItem
         jobTitle="Front-End Developer"
@@ -25,6 +26,7 @@ const CareerItems: React.FC = ({}) => {
         jobTags={["Kayzr", "2018"]}
         imgSrc="/images/kayzr.png"
         href="https://kayzr.com/"
+        isLast
       />
     </VStack>
   );
