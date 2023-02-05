@@ -1,4 +1,4 @@
-import { HStack, useBreakpointValue } from "@chakra-ui/react";
+import { Box, HStack } from "@chakra-ui/react";
 import React from "react";
 import { useVariant } from "../../store/VariantContext";
 import { DEFAULT_PADDING } from "../common/AppShell";
@@ -8,7 +8,6 @@ import NavigationLogo from "./NavigationLogo";
 
 const NavigationBar: React.FC = () => {
   const variant = useVariant();
-  const mobileMenu = useBreakpointValue({ base: true, md: false });
 
   return (
     <HStack
@@ -18,13 +17,16 @@ const NavigationBar: React.FC = () => {
       color={variant}
     >
       <NavigationLogo />
-      {mobileMenu ? (
+      <Box display={{ base: "block", tablet: "none" }}>
         <MobileNavigation />
-      ) : (
-        <HStack spacing={{ base: "8", laptopL: "20" }} textStyle="large">
-          <NavigationItems />
-        </HStack>
-      )}
+      </Box>
+      <HStack
+        display={{ base: "none", tablet: "flex" }}
+        spacing={{ base: "8", laptopL: "20" }}
+        textStyle="large"
+      >
+        <NavigationItems />
+      </HStack>
     </HStack>
   );
 };

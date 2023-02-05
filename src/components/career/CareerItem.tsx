@@ -1,12 +1,13 @@
 import {
   Center,
   HStack,
-  Image,
   Link,
   Tag,
   Text,
+  useTheme,
   VStack,
 } from "@chakra-ui/react";
+import Image from "next/image";
 import React from "react";
 
 interface Props {
@@ -55,14 +56,20 @@ const CareerItem: React.FC<Props> = ({
           <Text textStyle="large">{jobDescription}</Text>
         </VStack>
         <Center
+          flexShrink={0}
+          pos="relative"
           bg="white"
-          p="12"
-          maxW="sm"
-          maxH="44"
+          w="80"
+          h="40"
           borderRadius="lg"
           display={{ base: "none", tablet: "block" }}
         >
-          <Image src={imgSrc} alt="Wegroup" objectPosition="center" />
+          <Image
+            src={imgSrc}
+            alt={jobTags[0]}
+            fill
+            style={{ objectFit: "contain", padding: "32px" }}
+          />
         </Center>
       </HStack>
     </Center>

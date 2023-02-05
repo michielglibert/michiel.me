@@ -1,8 +1,15 @@
 import Head from "next/head";
-import { Center, useBreakpointValue, VStack } from "@chakra-ui/react";
+import {
+  Center,
+  GridItem,
+  SimpleGrid,
+  useBreakpointValue,
+  VStack,
+} from "@chakra-ui/react";
 import AppShell from "../components/common/AppShell";
 import GreetingDescription from "../components/home/GreetingDescription";
 import Greeting from "../components/home/Greeting";
+import GreetingAnimation from "../components/home/GreetingAnimation";
 
 export default function Home() {
   const shouldRenderBreak = useBreakpointValue({
@@ -26,21 +33,24 @@ export default function Home() {
         variant="white"
         containerProps={{
           display: "flex",
-          alignItems: "center",
+          alignItems: "stretch",
+          justifyContent: "center",
         }}
       >
-        <VStack
-          pos="relative"
-          align="flex-start"
-          justify="center"
-          h="100%"
-          spacing={{ base: "8", laptop: "10", laptopL: "16" }}
-          maxW="7xl"
-          margin="0 auto"
-        >
-          <Greeting />
-          <GreetingDescription />
-        </VStack>
+        <SimpleGrid columns={12} maxW="7xl" w="100%" columnGap="12">
+          <VStack
+            alignSelf="center"
+            gridColumn="span 8"
+            align="flex-start"
+            spacing={{ base: "8", laptop: "10", laptopL: "16" }}
+          >
+            <Greeting />
+            <GreetingDescription />
+          </VStack>
+          <GridItem alignSelf="center" gridColumn="span 4">
+            <GreetingAnimation />
+          </GridItem>
+        </SimpleGrid>
       </AppShell>
     </>
   );
