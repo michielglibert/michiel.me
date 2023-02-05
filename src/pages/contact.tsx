@@ -18,20 +18,24 @@ const Contact: NextPage = () => {
         backgroundImage="url(/images/background-curved-lines.svg)"
         backgroundRepeat="no-repeat"
         backgroundPosition="bottom right"
+        containerProps={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          pt: "0 !important",
+        }}
       >
         <SimpleGrid
-          pt={{ base: 0, laptop: "8" }}
           columns={{ base: 1, laptop: 2 }}
           h="100%"
           maxW="1300px"
-          margin="0 auto"
           columnGap="20"
           rowGap="10"
         >
-          <GridItem>
+          <GridItem alignSelf="center">
             <LeftSection />
           </GridItem>
-          <GridItem>
+          <GridItem alignSelf="center">
             <RightSection />
           </GridItem>
         </SimpleGrid>
