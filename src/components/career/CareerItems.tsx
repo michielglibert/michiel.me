@@ -11,7 +11,6 @@ const CareerItems: React.FC = ({}) => {
         jobTags={["Levenue", "FinTech", "Aug 2023 - Today"]}
         imgSrc="/images/levenue.png"
         href="https://www.levenue.com/"
-        isLast
       />
       <CareerItem
         jobTitle="Front-End Lead"

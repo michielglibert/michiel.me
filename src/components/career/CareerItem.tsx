@@ -38,28 +38,26 @@ const CareerItem: React.FC<Props> = ({
 
   return (
     <Center bg="gray.background" p="8">
-      <SimpleGrid columns={12} maxW="6xl" bg="gray.background">
-    <Center bg="gray.background" p="8">
       <HStack spacing="12" maxW="6xl" align="center">
-          <VStack align="stretch">
-            <Text textStyle="h3">{jobTitle}</Text>
-            <HStack>
-              <Tag
-                colorScheme="orange"
-                variant="outline"
-                {...(href && hrefProps)}
-              >
-                {jobTags[0]}
-              </Tag>
+        <VStack align="stretch">
+          <Text textStyle="h3">{jobTitle}</Text>
+          <HStack>
+            <Tag
+              colorScheme="orange"
+              variant="outline"
+              {...(href && hrefProps)}
+            >
+              {jobTags[0]}
+            </Tag>
 
-              {jobTags.slice(1).map((tag, index) => (
-                <Tag key={index} colorScheme="yellow" variant="outline">
-                  {tag}
-                </Tag>
-              ))}
-            </HStack>
-            <Text textStyle="large">{jobDescription}</Text>
-          </VStack>
+            {jobTags.slice(1).map((tag, index) => (
+              <Tag key={index} colorScheme="yellow" variant="outline">
+                {tag}
+              </Tag>
+            ))}
+          </HStack>
+          <Text textStyle="large">{jobDescription}</Text>
+        </VStack>
         <Center
           flexShrink={0}
           pos="relative"
