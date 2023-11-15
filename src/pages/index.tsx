@@ -12,18 +12,13 @@ import Greeting from "../components/home/Greeting";
 import GreetingAnimation from "../components/home/GreetingAnimation";
 
 export default function Home() {
-  const shouldRenderBreak = useBreakpointValue({
-    base: "true",
-    lg: false,
-  });
-
   return (
     <>
       <Head>
         <title>Michiel Glibert</title>
         <meta
           name="description"
-          content="Michiel Glibert, a software engineer based in Ghent, specializes in Front-End development but also boasts a wide range of technical expertise."
+          content="Michiel Glibert, a software engineer based in Ghent that boasts a wide range of technical expertise."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />

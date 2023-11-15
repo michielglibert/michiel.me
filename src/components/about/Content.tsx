@@ -5,11 +5,11 @@ const Content: React.FC = () => {
   return (
     <VStack spacing="8" textStyle="large" align="flex-start">
       <Text>
-        I am Michiel Glibert, a software engineer with a strong focus on
-        Front-End development. I have a passion for technology and constantly
-        strive to expand my knowledge and skills in the field. My main drive in
-        life is to make a meaningful impact, whether that be through the
-        projects I work on or the people I help.
+        I am Michiel Glibert, a software engineer based in Ghent. I have a
+        passion for technology and constantly strive to expand my knowledge and
+        skills in the field. My main drive in life is to make a meaningful
+        impact, whether that be through the projects I work on or the people I
+        help.
       </Text>
 
       {/* Commented till replace by image of me */}

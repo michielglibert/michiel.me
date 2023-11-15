@@ -21,7 +21,7 @@ const CareerItems: React.FC = ({}) => {
       />
       <CareerItem
         jobTitle="Front-End Developer"
-        jobDescription="Pursuing my professional career by starting in what I liked the most, Front-End development. I started working on a SaaS broker platform (InsurTech). Initially this was working on basic product features, but very quickly I had taken on much more complex projects."
+        jobDescription="Pursuing my professional career by starting in Front-End development. I started working on a SaaS broker platform (InsurTech). Initially this was working on basic product features, but very quickly I had taken on much more complex projects."
         jobTags={["WeGroup", "InsurTech", "Aug 2020 - Aug 2022"]}
         imgSrc="/images/wegroup.png"
         href="https://www.wegroup.be/"
