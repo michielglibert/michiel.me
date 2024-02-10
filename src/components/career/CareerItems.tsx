@@ -15,7 +15,7 @@ const CareerItems: React.FC = ({}) => {
       <CareerItem
         jobTitle="Front-End Lead"
         jobDescription="Lead Front-End engineer for a SaaS broker platform (InsurTech) where at it's peak it reached 1 million annual recurring revenue. This job focused on all aspects of front-end development. This includes designing the technical architecture, building the design-system, implementing product features and managing projects."
-        jobTags={["WeGroup", "InsurTech", "Aug 2022 - Today"]}
+        jobTags={["WeGroup", "InsurTech", "Aug 2022 - Aug 2023"]}
         imgSrc="/images/wegroup.png"
         href="https://www.wegroup.be/"
       />
