@@ -11,6 +11,7 @@ const baseColors = {
   gray: {
     title: "#24292F",
     background: "#F4F4F9",
+    border: "#DBDBDB",
   },
 };
 

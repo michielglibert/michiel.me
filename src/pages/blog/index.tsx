@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import AppShell from "../components/common/AppShell";
+import BlogItems from "../../components/blog/BlogItems";
+import AppShell from "../../components/common/AppShell";
 
 const Blog: NextPage = () => {
   return (
@@ -10,7 +11,9 @@ const Blog: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <AppShell>Blog</AppShell>
+      <AppShell>
+        <BlogItems />
+      </AppShell>
     </>
   );
 };

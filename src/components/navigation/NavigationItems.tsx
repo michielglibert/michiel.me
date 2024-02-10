@@ -11,7 +11,7 @@ const NavigationItems: React.FC = () => {
       <NavigationItem title="CAREER" to="/career" />
       <NavigationItem title="CONTACT" to="/contact" />
       {/* Temporary commented while still WIP */}
-      {/* <NavigationItem title="BLOG" color="#4DA1A9" to="/blog" /> */}
+      <NavigationItem title="BLOG" color="#4DA1A9" to="/blog" />
       <GithubNavigation />
     </>
   );

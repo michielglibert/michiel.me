@@ -16,10 +16,13 @@ const NavigationItem: React.FC<LinkProps & Props> = ({
   title,
   ...props
 }) => {
-  const { pathname } = useRouter();
+  const { pathname, ...other } = useRouter();
+
+  const basePath = pathname.split("/")[1];
+  const baseToPath = to.split("/")[1];
 
   return (
-    <UnderlineEffect isActive={pathname === to} color={color}>
+    <UnderlineEffect isActive={basePath === baseToPath} color={color}>
       <Link
         href={to}
         as={NextLink}

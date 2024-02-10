@@ -8,13 +8,16 @@ interface Props {
   to: string;
 }
 
-const NextButton: React.FC<PropsWithChildren<Props>> = ({ to, children }) => {
+const PreviousButton: React.FC<PropsWithChildren<Props>> = ({
+  to,
+  children,
+}) => {
   const variant = useVariant();
 
   return (
     <Button
       to={to}
-      rightIcon={
+      leftIcon={
         <Center
           borderRadius="full"
           border="2px"
@@ -22,7 +25,10 @@ const NextButton: React.FC<PropsWithChildren<Props>> = ({ to, children }) => {
           w={{ base: "9", laptop: "11" }}
           h={{ base: "9", laptop: "11" }}
         >
-          <ArrowForwardIcon boxSize={{ base: 6, laptop: 8 }} />
+          <ArrowForwardIcon
+            boxSize={{ base: 6, laptop: 8 }}
+            transform="rotate(180deg)"
+          />
         </Center>
       }
     >
@@ -31,4 +37,4 @@ const NextButton: React.FC<PropsWithChildren<Props>> = ({ to, children }) => {
   );
 };
 
-export default NextButton;
+export default PreviousButton;
