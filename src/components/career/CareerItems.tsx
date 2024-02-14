@@ -9,20 +9,13 @@ const CareerItems: React.FC = ({}) => {
         jobTitle="Software Engineer"
         jobDescription="Levenue is a FinTech company offering a platform for securing funding for recurring revenue businesses. As a Full-Stack Software Engineer, I participate in multiple projects. My primary focus here is contributing to the development of a microservices-based underwriting engine with the goal to assess the eligibility of companies for upfront cash, delivered within 48 hours. Underwriting this fast was almost unseen in the industry. Typescript, Kotlin and GoLang are the main technologies I used here."
         jobTags={["Levenue", "FinTech", "Aug 2023 - Today"]}
-        imgSrc="/images/levenue.png"
+        imgSrc="/images/levenue.svg"
         href="https://www.levenue.com/"
       />
       <CareerItem
-        jobTitle="Front-End Lead"
-        jobDescription="I was promoted to Front-End Lead for the increased productivity that the team gained. I was responsible for the Front-End of our product where the core feature contained complex frontend business logic. All of this was built in React with Typescript. At it’s peak the company reached over 1 million annually recurring revenue."
-        jobTags={["WeGroup", "InsurTech", "Aug 2022 - Aug 2023"]}
-        imgSrc="/images/wegroup.png"
-        href="https://www.wegroup.be/"
-      />
-      <CareerItem
-        jobTitle="Front-End Developer"
-        jobDescription="Pursuing my professional career by starting in Front-End development. I started working on a SaaS broker platform (InsurTech). Initially this was working on basic product features, but very quickly I had taken on much more complex projects."
-        jobTags={["WeGroup", "InsurTech", "Aug 2020 - Aug 2022"]}
+        jobTitle="Front-End Engineer and Lead"
+        jobDescription="I started my professional career by joining an InsurTech startup as a Front-End Engineer. After 2 years I was promoted to Front-End Lead for the increased productivity that the team gained. I was responsible for the Front-End of our product where the core feature contained complex frontend business logic. All of this was built in React with Typescript. At it’s peak the company reached over 1 million annually recurring revenue."
+        jobTags={["WeGroup", "InsurTech", "Aug 2020 - Aug 2023"]}
         imgSrc="/images/wegroup.png"
         href="https://www.wegroup.be/"
       />
