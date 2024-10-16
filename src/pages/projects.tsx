@@ -42,10 +42,20 @@ const Projects: React.FC<Props> = () => {
             }}
           >
             <Project
+              year="2024 - ..."
+              projectTitle="Budgeteer (WIP)"
+              projectDescription="Budgeteer is a budgeting app that helps you keep track of your expenses and income. It approaches budgetting in a hassle-free way."
+              projectTags={["Web Application"]}
+              imgSrc="/images/budgeteer.webp"
+              imgAlt="Budgeteer"
+              href="https://www.budgeteer.app/"
+              isSolo
+            />
+            <Project
               year="2024"
               projectTitle="Gietvloeren Mille"
               projectDescription="A website made by me in Next.js for Mille. Specifically to showcase their cast floors and concrete design offering, and also get in touch with potential clients."
-              projectTags={["Website", "Solo", "Next.js"]}
+              projectTags={["Website", "Next.js"]}
               imgSrc="/images/gietvloeren-mille.webp"
               imgAlt="Gietvloeren mille"
               href="https://www.gietvloerenmille.be/"
@@ -55,7 +65,7 @@ const Projects: React.FC<Props> = () => {
               year="2024"
               projectTitle="Renovatiewerken Mille"
               projectDescription="A website made by me in Next.js for Mille. Mainly to showcase their renovations and to get in touch with potential clients."
-              projectTags={["Next.js"]}
+              projectTags={["Website", "Next.js"]}
               imgSrc="/images/mille.webp"
               imgAlt="Renovatiewerken mille"
               href="https://renovatiewerkenmille.be/"
