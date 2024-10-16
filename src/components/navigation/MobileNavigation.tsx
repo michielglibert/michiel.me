@@ -13,7 +13,11 @@ const MobileNavigation: React.FC<Props> = () => {
 
   return (
     <>
-      <Button variant="ghost" onClick={setIsMenuOpen.toggle} zIndex={2}>
+      <Button
+        variant={variant === "white" ? "ghostWhite" : "ghost"}
+        onClick={setIsMenuOpen.toggle}
+        zIndex={2}
+      >
         {isMenuOpen ? <Close boxSize={8} /> : <Hamburger boxSize={7} />}
       </Button>
 
