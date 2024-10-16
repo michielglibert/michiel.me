@@ -14,8 +14,8 @@ const GreetingDescription: React.FC = () => {
         textStyle={{ base: "h4", tablet: "h3" }}
         lineHeight="150%"
       >
-        Pixel perfect, code clean, User-first, always keen. Front-end flows,
-        design glows, Innovative solutions, always a pro.
+        Code clean, solutions keen, User-first, across the scene. Front to back,
+        systems stack, Innovative builds, always on track.
       </Text>
       <NextButton to="/about">About me</NextButton>
     </VStack>

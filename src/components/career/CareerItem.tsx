@@ -6,6 +6,7 @@ import {
   Text,
   useTheme,
   VStack,
+  Wrap,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import React from "react";
@@ -41,7 +42,7 @@ const CareerItem: React.FC<Props> = ({
       <HStack spacing="12" maxW="6xl" align="center">
         <VStack align="stretch">
           <Text textStyle="h3">{jobTitle}</Text>
-          <HStack>
+          <Wrap>
             <Tag
               colorScheme="orange"
               variant="outline"
@@ -55,7 +56,7 @@ const CareerItem: React.FC<Props> = ({
                 {tag}
               </Tag>
             ))}
-          </HStack>
+          </Wrap>
           <Text textStyle="large">{jobDescription}</Text>
         </VStack>
         <Center

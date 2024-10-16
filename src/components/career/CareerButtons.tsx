@@ -22,7 +22,7 @@ const CareerButtons: React.FC = () => {
       >
         Download my CV
       </Button>
-      <NextButton to="/contact">Contact</NextButton>
+      <NextButton to="/projects">Projects</NextButton>
     </Stack>
   );
 };
