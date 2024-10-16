@@ -22,7 +22,7 @@ const NavigationBar: React.FC = () => {
       </Box>
       <HStack
         display={{ base: "none", tablet: "flex" }}
-        spacing={{ base: "8", laptopL: "20" }}
+        spacing={{ base: "6", laptopL: "20" }}
         textStyle="large"
       >
         <NavigationItems />
